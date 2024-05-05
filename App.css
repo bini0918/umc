@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(236, 240, 246);
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  width: 70%;
+  max-width: 400px;
+  padding: 10px;
+  border-color: blue;
+  background-color: white;
+}
+
+input::placeholder {
+  font-style: italic;
+  color: rgb(207, 219, 237);
+}
+
+.todo,
+.done {
+  width: 45%;
+  max-width: 400px;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-weight: bold;
+  border-bottom: 3px solid rgb(207, 219, 237);
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+button {
+  border-style: solid;
+  border-color: rgb(207, 219, 237);
+  background-color: rgb(207, 219, 237);
+}
+
+.title {
+  text-align: center;
+}
+
+.divider {
+  border: 1px solid rgb(207, 219, 237);
+  width: 700px;
+}
