@@ -1,76 +1,42 @@
-body {
-  background-color: rgb(236, 240, 246);
-  text-align: center;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-wrapper {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-input {
-  width: 70%;
-  max-width: 400px;
-  padding: 10px;
-  border-color: blue;
-  background-color: white;
-}
-
-input::placeholder {
-  font-style: italic;
-  color: rgb(207, 219, 237);
-}
-
-.todo,
-.done {
-  width: 45%;
-  max-width: 400px;
-  margin: 10px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  font-weight: bold;
-  border-bottom: 3px solid rgb(207, 219, 237);
-  padding: 5px 0;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-button {
-  border-style: solid;
-  border-color: rgb(207, 219, 237);
-  background-color: rgb(207, 219, 237);
-}
-
-.title {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-.divider {
-  border: 1px solid rgb(207, 219, 237);
-  width: 700px;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
